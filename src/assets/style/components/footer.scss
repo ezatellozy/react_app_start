@@ -1,0 +1,66 @@
+footer {
+  .logo_side {
+    background: url("../../images/bg-footer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .content_side {
+    .contact_info {
+      .inner_item {
+        .item {
+          @apply flex items-start mb-3 last:mb-0;
+
+          .icon {
+            @apply me-2 w-8 h-8 flex items-center justify-center bg-[#C8A45D1A] rounded-full;
+          }
+
+          .content {
+            h3.title {
+              @apply text-text-dark text-base mb-1;
+            }
+
+            a,
+            p {
+              @apply text-white font-normal text-base mb-1;
+            }
+          }
+        }
+      }
+    }
+
+    .links {
+      li {
+        &:not(:last-child) {
+          @apply mb-3;
+        }
+
+        a {
+          @apply text-lg capitalize hover:text-primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .social_links {
+    @apply py-2;
+
+    ul {
+      @apply flex items-center;
+
+      li {
+        @apply me-4 last:me-0 text-[#72809D] hover:text-white;
+      }
+
+      &.social {
+        li {
+          i {
+            @apply text-xl;
+          }
+        }
+      }
+    }
+  }
+}

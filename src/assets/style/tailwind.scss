@@ -1,0 +1,77 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@layer components {
+  .base-btn {
+
+    @apply py-3 px-11 bg-primary rounded-md flex border-primary items-center justify-center w-fit text-lg text-secondary font-bold ease-in-out duration-300 z-10 overflow-hidden relative;
+
+    &::before {
+      content: "";
+      @apply bg-primary text-secondary border-secondary rounded-lg absolute block ease-in-out duration-300;
+      left: 50%;
+      transform: translateX(-50%) scaleY(1) scaleX(1.25);
+      top: 100%;
+      width: 140%;
+      height: 180%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      @apply bg-primary border-secondary rounded-lg absolute text-secondary block ease-in-out duration-300;
+      left: 55%;
+      transform: translateX(-50%) scaleY(1) scaleX(1.45);
+      top: 180%;
+      width: 160%;
+      height: 190%;
+
+      z-index: -1;
+    }
+
+    &:hover {
+
+
+      &::before {
+        @apply bg-white border-secondary text-primary;
+        top: -35%;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      }
+
+      &::after {
+        top: -45%;
+        @apply bg-white border-secondary text-primary;
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      }
+
+    }
+  }
+
+  .base-link {
+
+    @apply text-primary font-bold ease-in-out duration-300;
+
+    &:hover {
+      @apply text-white
+    }
+
+    i {
+      @apply ms-2
+    }
+
+
+  }
+
+  .actions {
+    @apply flex items-center;
+
+    a,
+    button {
+      &:not(:last-child) {
+        @apply me-4
+      }
+    }
+  }
+}
