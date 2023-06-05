@@ -1,4 +1,11 @@
 import logo from "../assets/images/logo/logo_footer.svg";
+import phone from "../assets/images/icons/phone.svg";
+import email from "../assets/images/icons/email.svg";
+import work from "../assets/images/icons/work.svg";
+import location from "../assets/images/icons/location.svg";
+import googlePlay from "../assets/images/google_play.svg";
+import appStore from "../assets/images/app_store.svg";
+
 import "../assets/style/components/footer.scss";
 function Footer() {
   return (
@@ -38,10 +45,7 @@ function Footer() {
                   <div className="inner_item">
                     <div className="item">
                       <div className="icon">
-                        <img
-                          src="../assets/images/icons/phone.svg"
-                          alt="phone_icon"
-                        />
+                        <img src={phone} alt="phone_icon" />
                       </div>
                       <div className="content">
                         <h3 className="title">Phone Number</h3>
@@ -58,10 +62,7 @@ function Footer() {
                     </div>
                     <div className="item">
                       <div className="icon">
-                        <img
-                          src="../assets/images/icons/email.svg"
-                          alt="phone_icon"
-                        />
+                        <img src={email} alt="phone_icon" />
                       </div>
                       <div className="content">
                         <h3 className="title">Email Address</h3>
@@ -78,10 +79,7 @@ function Footer() {
                     </div>
                     <div className="item">
                       <div className="icon">
-                        <img
-                          src="../assets/images/icons/location.svg"
-                          alt="phone_icon"
-                        />
+                        <img src={location} alt="phone_icon" />
                       </div>
                       <div className="content">
                         <h3 className="title">Address</h3>
@@ -98,10 +96,7 @@ function Footer() {
                     </div>
                     <div className="item">
                       <div className="icon">
-                        <img
-                          src="~/assets/images/icons/work.svg"
-                          alt="phone_icon"
-                        />
+                        <img src={work} alt="phone_icon" />
                       </div>
                       <div className="content">
                         <h3 className="title">Work Time</h3>
@@ -114,21 +109,15 @@ function Footer() {
                   </div>
                 </div>
                 <div className="download_section w-full my-3 lg:my-0 lg:w-4/12">
-                  <h4 className="title text-text-dark text-base mb-2">
-                    downloadApplication:
+                  <h4 className=" text-text-dark text-base mb-2">
+                    Download Application:
                   </h4>
                   <div className="actions">
                     <a href="/" href="/">
-                      <img
-                        src="~/assets/images/google_play.svg"
-                        alt="google_play_icon"
-                      />
+                      <img src={googlePlay} alt="google_play_icon" />
                     </a>
                     <a href="/" href="/">
-                      <img
-                        src="~/assets/images/app_store.svg"
-                        alt="app_store_icon"
-                      />
+                      <img src={appStore} alt="app_store_icon" />
                     </a>
                   </div>
                 </div>
@@ -153,16 +142,16 @@ function Footer() {
                 </ul>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="/">contactUs</a>
+                    <a href="/">Contact Us</a>
                   </li>
                   <li>
-                    <a href="/">termsOfUse</a>
+                    <a href="/">Terms of use</a>
                   </li>
                 </ul>
               </div>
             </div>
             <p className="copyrights py-2 text-center text-text-dark">
-              copyrights
+              Copyrights
               <bdi>
                 2023 ©Lawyer • Designed by
                 <a href="/" href="https://alalmiyalhura.com" target="_blank">

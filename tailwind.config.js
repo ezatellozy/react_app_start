@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
 
@@ -15,11 +16,17 @@ module.exports = {
       pink: "#ff49db",
       orange: "#ff7849",
       green: "#13ce66",
-      yellow: "#ffc82c",
-      "gray-dark": "#273444",
+
       description: "#697E95",
-      gray: "#8492a6",
-      "gray-light": "#d3dce6",
+      transparent: "transparent",
+      current: "currentColor",
+      red: colors.red,
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
     },
     screens: {
       sm: "576",
