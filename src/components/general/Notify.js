@@ -1,7 +1,7 @@
 const Notify = (props) => {
   return (
-    <div class="notify_wrapper">
-      <div class="notify_content">{props.children}</div>
+    <div className="notify_wrapper">
+      <div className="notify_content">{props.children}</div>
     </div>
   );
 };

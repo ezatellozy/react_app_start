@@ -1,5 +1,7 @@
 import HomeSolutions from "./HomeSolutions";
 import HomeStats from "./HomeStats";
+import HomeClients from "./HomeClients";
+import HomeConnectLawyer from "./HomeConnectLawyer";
 import GeneralBaseSection from "../general/GeneralBaseSection";
 import service1 from "../../assets/dammyImages/service1.png";
 const HomeContent = () => {
@@ -8,7 +10,7 @@ const HomeContent = () => {
     image: service1,
     title: "<h2><span>Law Solutions</span> to solve your problems</h2>",
     description:
-      "<p class='mb-5'>The firm was established in 1990 in Kolkata, India as an Intellectual Property Law Firm.</p> <p>Our exposure to the complexities in ambit of Intellectual Property Law gave us the impetus and spiration to diversify into other streams.</p>",
+      "<p className='mb-5'>The firm was established in 1990 in Kolkata, India as an Intellectual Property Law Firm.</p> <p>Our exposure to the complexities in ambit of Intellectual Property Law gave us the impetus and spiration to diversify into other streams.</p>",
   };
 
   const routePath = {
@@ -26,6 +28,8 @@ const HomeContent = () => {
 
           <HomeStats></HomeStats>
           <HomeSolutions></HomeSolutions>
+          <HomeClients></HomeClients>
+          <HomeConnectLawyer></HomeConnectLawyer>
         </div>
       </div>
     </div>

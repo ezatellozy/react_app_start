@@ -35,7 +35,7 @@ const GeneralBaseSection = (props) => {
               className="main_description"
               dangerouslySetInnerHTML={{ __html: sectionData.description }}
             ></div>
-            <buttion className="base-btn  mt-8">{props.route.name}</buttion>
+            <button className="base-btn  mt-8">{props.route.name}</button>
             {/* <nuxt-link
             v-if="route"
             :to="localePath(route)"

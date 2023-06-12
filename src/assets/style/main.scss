@@ -90,3 +90,11 @@ body {
     }
   }
 }
+
+.blog_section {
+  @apply rounded-[2rem] md:rounded-[3rem] bg-white;
+}
+.app_section {
+  @apply rounded-[2rem] md:rounded-[3rem];
+  background: url("../images/app_bg.svg");
+}
