@@ -1,5 +1,6 @@
 import BlogCard from "../blog/BlogCard";
-const HomeBlogSection = () => {
+const HomeBlogSection = (props) => {
+  console.log(props);
   const blogs = [
     {
       id: 1,

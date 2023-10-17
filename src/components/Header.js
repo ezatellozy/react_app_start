@@ -1,5 +1,6 @@
 import logo from "../assets/images/logo/logo.svg";
 import list from "../assets/images/icons/list.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -7,19 +8,25 @@ function Header() {
       <div className="container mx-auto">
         <nav className="border-b border-primary py-5 flex items-center justify-between">
           <div className="logo">
-            <a href="/" className="text-primary">
+            <Link to="/" className="text-primary">
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
           </div>
 
           <div className="list_menu flex items-center">
             <div className="auth pe-4">
-              <a href="/" className="text-primary pe-4 text-sm md:text-lg">
+              <Link
+                to="/auth/register"
+                className="text-primary pe-4 text-sm md:text-lg"
+              >
                 Create Account
-              </a>
-              <a href="/" className="text-primary text-sm md:text-lg">
+              </Link>
+              <Link
+                to="/auth/login"
+                className="text-primary text-sm md:text-lg"
+              >
                 Login
-              </a>
+              </Link>
             </div>
             <div className="menu border-primary border-s ps-4">
               <button type="button">

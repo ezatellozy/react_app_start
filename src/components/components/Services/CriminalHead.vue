@@ -1,0 +1,26 @@
+<template>
+    
+  </template>
+  
+  <script>
+  export default {
+  
+  };
+  </script>
+  
+  <style lang="scss">
+  .blog_card {
+    .blog_card_body {
+      .top_body_header {
+        @apply flex items-center;
+        p {
+          @apply flex items-center me-2 last:me-0 text-text-dark text-sm;
+          img {
+            @apply me-2;
+          }
+        }
+      }
+    }
+  }
+  </style>
+  
